@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.NameTitle h1{
+    margin-top: 50px;;
+position: absolute;
+ left: 50px;
+ right: 50px;;
+ top: 40%;
+ bottom: 55%;
+ font-family: Impact, Charcoal, sans-serif;
+font-size: 80px;
+border: 14px solid #0a0a0a;
+border-left: 14px;
+
+letter-spacing: 10px;
+word-spacing: 10px;
+color: #fcfbfb;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+.NameTitle h2{
+    margin-top: 60px;;
+position: absolute;
+ left: 60px;
+ right: 50px;;
+ top: 70%;
+ bottom: 55%;
+
+ font-family: Impact, Charcoal, sans-serif;
+font-size: 40px;
+letter-spacing: 10px;
+word-spacing: 10px;
+color: #fdfcfc;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+* body {
+    background: url(cool-background.png);
+    background-size: contain;
+}
+
+button {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    margin: 30px;
+    top: 20px;
+        right: 20px;
+        
+
+        
+  }
+  
+  button span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  }
+  
+  button span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+  }
+  
+  button span:not(hover) {
+    transition: all 1s;
+  }
+  header {
+   
+   
+    padding: 20px;
+    text-align: center;
+
+  }
+  a {
+    text-decoration: none;
+  }
+  
+ 
+  
+  
