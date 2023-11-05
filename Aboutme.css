@@ -1,67 +1,86 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
-
-*{
-
+* {
     margin: 0;
     padding: 0;
 }
-* body {
-    background: url(cool-background.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
     height: 100vh;
-
-
+    background-color: #F7EFE5;
 }
+
+.container {
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center;
+    text-align: center;
+}
+
 img {
-	display: block;
-	margin: 2 auto;
-	max-width: 100%;
-	align-items: left;
-   
-    margin-top: 150px;
-	margin-left: 50px;
-    width: 300px; 
-    height: 300px; 
-    
-    
+    max-width: 100%;
+    max-height: 200vh;
+    margin: 30px; /* Equal margin on all sides */
 }
 
-  
-     
-      .container {
-        display: flex;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin-left: 20px;
-        
-      }
-      
-      img {
-        max-width: 60%;
-        max-height: 60%;
-        margin-right: 30px;
-        margin-left: 10px;
+.text {
+    line-height: 1.5;
+    font-family: 'Bitter', serif;
+    margin-bottom: 20px; /* Add spacing between text and button */
+}
 
-      }
-      
-      .text {
-        flex: 2;
-        margin-top: 40px;
-        max-width: 600px;
-        margin-left: 20px;
-      }
-      
-     
-      p {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 30px;
-        line-height: 1.5;
-        color: white;
+p {
+    font-size: 60px;
+    color: black;
+}
 
-      }
-    
-      
+button {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  outline: none;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+button::after {
+  position: absolute;
+  content: " ";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  color: #fff;
+}
+
+button:hover::after {
+  transform: scale(2) rotate(180deg);
+  background: #000;
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
