@@ -9,6 +9,7 @@ function App() {
     <div>
       <Hero/>
       <Sidebar/>
+    
       
     </div>
    
