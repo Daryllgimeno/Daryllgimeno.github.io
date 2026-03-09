@@ -1,17 +1,11 @@
+const Sidebar = () => {
+  return (
+    <aside className="sidebar">
+      <div className="sidebar-container">
+        <button className="sidebar-button">Projects</button>
+      </div>
+    </aside>
+  );
+};
 
-
-
-const sidebar = () =>{
-    return (
-        <section>
-    <div className="sidebar">
-    <a href="Work.html">Project</a>
-    <a href="#">Underconstruction</a>
-  </div>
-        </section>
-
-
-    )
-
-}
-export default sidebar;
+export default Sidebar;
