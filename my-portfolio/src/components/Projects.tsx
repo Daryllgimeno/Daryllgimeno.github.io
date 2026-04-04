@@ -3,11 +3,12 @@ const Projects = () => {
     <div className="container">
       <h1>Projects</h1>
 
-      <p><strong>Server Monitoring System</strong><br />
-      Built using Laravel to track uptime and server status.</p>
+      <p><strong>Matuturo tutor finder</strong><br />
+      A web-based reviewer for students,  Built using php and mysql</p>
 
-      <p><strong>Smart Review System</strong><br />
-      A web-based reviewer for students.</p>
+      <p><strong>Agriculture inventory system</strong><br />
+     A system use for poultry inventory, Built using Vue, php and laravel.
+     </p>
     </div>
   );
 };
